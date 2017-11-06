@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MB10 - Szkółka piłkarska</title>
+
+  <link rel="stylesheet" href="css/00-imports.css"/>
+
+  <!-- DEBUG -->
+  <link rel="stylesheet" href="css/01-reset.css"/>
+  <link rel="stylesheet" href="css/02-pocketgrid.css"/>
+  <link rel="stylesheet" href="css/forms.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/utility.css"/>
+  <link rel="stylesheet" href="css/typography.css"/>
+  <link rel="stylesheet" href="css/media-desktop.css"/>
+  <link rel="stylesheet" href="css/media-mobile.css"/>
+  <!-- DEBUG -->
+</head>
+<body>
+
+
+
+
+<?php require($DOCUMENT_ROOT . "includes/_header.twig");?>
+
+<!-- #SECTION 2  #ARTICLES -->
+
+
+
+<?php /**/?>
+<?php
+
+if ($_REQUEST['mode'] == "art") {
+    require($DOCUMENT_ROOT . "includes/_article.twig");
+
+} else {
+    require($DOCUMENT_ROOT . "includes/_article-list.twig");
+}
+
+?>
+
+
+<!-- #SECTION 3  #SZKOLKA -->
+<section id="szkolka" class="section-3-bg bg">
+
+</section> <!-- ZAMIENIĆ NA OBRAZEK -->
+
+<!-- #SECTION 4  #ZAPISY -->
+<section class="block-group" style="height: 80px;"></section> <!-- SEPARATOR  -->
+
+<section id="zapisy" class="signup-section">
+  <div class="signup-section__header">ZAPISY</div>
+  <div class="block-group  signup-section__wrapper">
+    <div class="block  signup-section__description">
+      <p>Nabór do MB10 prowadzony jest <strong>przez cały rok</strong>, w każdej chwili można do nas dołączyć.</p>
+      <p>Jedyne czego wymagamy, to <strong>prawidłowy stan zdrowia dziecka</strong> pozwalający na udział w zajęciach
+        sportowych. Nowozgłoszone dzieci do MB10 przypisywane się do grup <strong>w zależności od wieku i
+          zangażowania,
+          umiejętności</strong> ruchowych i sportowych.</p>
+      <div class="block  signup-section__agegroups">
+        <img src="img/logo.svg">
+        <div>
+          <ul>
+            <li><strong>GRUPY WIEKOWE</strong></li>
+          </ul>
+          <ul>
+            <li>SZKRABY - od 4 do 4 roku życia</li>
+            <li>BRZDĄCE - od 6 do 7 roku życia</li>
+            <li>ŻACZKI - od 7 do 8 roku życia</li>
+            <li>ORLICY - od 6 do 9 roku życia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block  signup-section__form">
+
+      <div class="signup-form__header">Zapisz swoje dziecko
+        <div>Wypełnij formularz zgłoszeniowy do Dziecięcej Szkółki Piłkarskiej MB10</div>
+      </div>
+
+      <form action="mb10-form.php" method="post" style="margin: 2em 0 0 0;">
+        <div class="block-group">
+          <div class="block w-50" style="">
+            <label for="name">Imię i nazwisko *</label>
+          </div>
+          <div class="block w-50">
+            <label for="agegroup">Grupa wiekowa *</label>
+          </div>
+        </div>
+
+        <div class="block-group margin-bottom">
+          <div class="block w-50" style="">
+            <input class="w-845" name="name" type="text" required>
+          </div>
+          <div class="block w-50">
+            <select class="w-845" name="agegroup" required>
+              <option value="Szkraby">Szkraby</option>
+              <option value="Brzdace">Brzdące</option>
+              <option value="Żaczki">Żaczki</option>
+              <option value="Orlicy">Orlicy</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="block-group">
+          <div class="block w-50" style="">
+            <label for="childname">Imię dziecka *</label>
+          </div>
+          <div class="block w-50" style="">
+            <label for="phone">Numer telefonu *</label><br>
+          </div>
+        </div>
+        <div class="block-group margin-bottom">
+          <div class="block w-50" style="">
+            <input class="w-845" name="childname" type="text" required>
+          </div>
+          <div class="block w-50" style="">
+            <input class="w-845" name="phone" type="tel" required>
+          </div>
+        </div>
+
+
+        <div class="block-group margin-bottom">
+          <div class="block w-100">
+            <label for="message">Treść wiadomości *</label><br>
+            <textarea name="message" type="text" required></textarea>
+          </div>
+        </div>
+
+
+        <div class="block-group">
+          <div class="block w-50">
+            <label for="email">Twój adres email *</label><br>
+            <input class="email  w-845" type="email" name="email" style="" required>
+          </div>
+          <div class="block w-50">
+            <input name="wyslij" type="submit" class="button-submit" value="CHCĘ ZAPISAĆ DZIECKO">
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="block-group" style="height: 74px;"></section> <!-- SEPARATOR  -->
+
+<?php require($DOCUMENT_ROOT . "includes/_footer.twig");?>
+
+<!-- For IE6-8 Media Queries compatibility -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.min.js"></script>
+</body>
+</html>
