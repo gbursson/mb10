@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2f499ac1-62d0-4e7c-a5a3-a438f8ed2c2c" name="webfaction" url="http://mb10-2.gburus.webfactional.com/">
+        <fileTransfer host="web586.webfaction.com" port="22" rootFolder="/home/gburus" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
