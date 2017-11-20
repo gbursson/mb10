@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="webfaction">
+  <component name="PublishConfigData" autoUpload="Always" serverName="webfaction" uploadOnCheckin="2f499ac1-62d0-4e7c-a5a3-a438f8ed2c2c">
     <serverData>
       <paths name="webfaction">
         <serverdata>
@@ -10,5 +10,7 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="webfaction" />
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
