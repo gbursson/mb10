@@ -1,0 +1,100 @@
+<section class="block-group" style="height: 80px;"></section> <!-- SEPARATOR  ->
+
+<!-- #SECTION 4  #FOOTER -->
+
+<p class="mobile-hidden" style="text-align: center; font: 400 120% Montserrat, sans-serif; letter-spacing: 4px; color: #2c3231; margin-bottom: 74px;">ZAPISY</p>
+<section class="block-group signup">
+
+  <div class="mobile-hidden block box  w-45  pad-r-05" style="padding-left: 2.5%;">
+
+    <div class="text-just" style="color: #60514b;">
+      <p>Nabór do MB10 prowadzony jest <strong>przez cały rok</strong>, w każdej chwili można do nas dołączyć.</p>
+      <p>Jedyne czego wymagamy, to <strong>prawidłowy stan zdrowia dziecka</strong> pozwalający na udział w zajęciach
+        sportowych. Nowozgłoszone dzieci do MB10 przypisywane się do grup <strong>w zależności od wieku i zangażowania,
+          umiejętności</strong> ruchowych i sportowych.</p>
+    </div>
+    <div style="height: 11em; padding: 0.5em 0 3em 0; border: 1px solid #d7b013; color: #30514b; ">
+      <img class="f-l" src="img/logo.svg" style="height: 9em; padding: 0.5em 0.5em 0 0;">
+      <ul style="list-style-type: none; text-align: left;">
+        <li><strong>GRUPY WIEKOWE</strong></li>
+      </ul>
+      <ul class="text-left" style="list-style-type: none;">
+        <li>SZKRABY - od 4 do 4 roku życia</li>
+        <li>BRZDĄCE - od 6 do 7 roku życia</li>
+        <li>ŻACZKI - od 7 do 8 roku życia</li>
+        <li>ORLICY - od 6 do 9 roku życia</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="zapisy" class="form-signup  block box  w-55  pad-r-05 pad-l-05">
+
+    <h2 class="f-600" style="font-size: 1.375em; color: #d7b013; ">Zapisz swoje dziecko</h2>
+    <div style="font-size: 0.6875em; color: #30514b; margin-top: 0em;">Wypełnij formularz zgłoszeniowy do Dziecięcej
+      Szkółki Piłkarskiej MB10
+    </div>
+
+    <form action="mb10-form.php" method="post" style="margin: 2em 0 0 0;">
+      <div class="block-group">
+        <div class="block box w-50" style="">
+          <label for="name">Imię i nazwisko *</label>
+        </div>
+        <div class="block box w-50">
+          <label for="agegroup">Grupa wiekowa *</label>
+        </div>
+      </div>
+
+      <div class="block-group margin-bottom">
+        <div class="block box w-50" style="">
+          <input class="w-845" name="name" type="text">
+        </div>
+        <div class="block box w-50">
+          <select class="w-845" name="agegroup">
+            <option value="Szkraby">Szkraby</option>
+            <option value="Brzdace">Brzdące</option>
+            <option value="Żaczki">Żaczki</option>
+            <option value="Orlicy">Orlicy</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="block-group">
+        <div class="block box w-50" style="">
+          <label for="childname">Imię dziecka *</label>
+        </div>
+        <div class="block box w-50" style="">
+          <label for="phone">Numer telefonu *</label><br>
+        </div>
+      </div>
+      <div class="block-group margin-bottom">
+        <div class="block box w-50" style="">
+          <input class="w-845" name="childname" type="text">
+        </div>
+        <div class="block box w-50" style="">
+          <input class="w-845" name="phone" type="tel">
+        </div>
+      </div>
+
+
+      <div class="block-group margin-bottom">
+        <div class="block box w-100">
+          <label for="message">Treść wiadomości *</label><br>
+          <textarea name="message"></textarea>
+        </div>
+      </div>
+
+
+      <div class="block-group">
+        <div class="block box w-50">
+          <label for="email">Twój adres email *</label><br>
+          <input class="email  w-845" type="email" name="email" style="">
+        </div>
+        <div class="block box w-50">
+          <input name="wyslij" type="submit" class="button-submit" value="CHCĘ ZAPISAĆ DZIECKO">
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+</section>
