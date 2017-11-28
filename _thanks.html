@@ -14,33 +14,18 @@
   <link rel="stylesheet" href="css/media-desktop.css"/>
   <link rel="stylesheet" href="css/media-mobile.css"/>
 </head>
-
 <body>
 
-<?php
-
-if ($_GET['mode'] == "art") {
-
-    include("articles/_art-header.html");
-    include("articles/_art-".$_GET['art-id'].".html");
-    include("articles/_art-footer.html");
-}
-
-else {
-    include('_section-1-header.html');
-    include('_section-2-articles.html');
-    include('_section-3-school.html');
-    include('_section-4-signup.html');
-    include('_section-5-footer.html');
-}
-
-
-
-$_GET['mode'] = "";
-
-?>
-
-
+<div class="block-group" style="margin-left: 20%; margin-right: 20%; margin-top: 15%;">
+  <div class="block" style="width: 20%;"><img src="../img/logo.svg" style="min-height: 200px;float: right; margin-top: -20px; padding-right: 10px;"></div>
+  <div class="block" style="width: 80%; ">
+    <span style='font-size: 250%; text-align: center; color: #5e5e5e'>DZIĘKUJEMY ZA ZGŁOSZENIE</span><br>
+    <span style='text-align: justify; font-size: 200%;'>
+      Skontaktujemy się z Państwem wkrótce w celu uzyskania więcej informacji
+    </span><br><br><br><br><br>
+    <a href="https://mb10lipno.pl/" class="btn-readmore" style="padding: 2%; font-size: 200%;">Powrót</a>
+  </div>
+</div>
 
 <!-- For IE6-8 Media Queries compatibility -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.min.js"></script>
