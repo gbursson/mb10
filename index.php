@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/forms.css"/>
   <link rel="stylesheet" href="css/utility.css"/>
   <link rel="stylesheet" href="css/typography.css"/>
+  <link rel="stylesheet" href="css/gallery.css"/>
   <link rel="stylesheet" href="css/media-desktop.css"/>
   <link rel="stylesheet" href="css/media-mobile.css"/>
 </head>
@@ -24,6 +25,12 @@ if ($_GET['mode'] == "art") {
     include("articles/_art-header.html");
     include("articles/_art-".$_GET['art-id'].".html");
     include("articles/_art-footer.html");
+}
+
+if ($_GET['mode'] == "gallery") {
+    include('_gallery-header.html');
+    include('_gallery.php');
+    include('_gallery-footer.html');
 }
 
 else {
