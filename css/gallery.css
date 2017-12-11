@@ -10,8 +10,9 @@
 .thumbnail {
   max-width: 40%;
   padding: 10px;
-  box-shadow: 2px 2px 2px 2px teal;
-  margin-right: 10px;
+  box-shadow: 2px 2px 2px 2px #dcdcdc;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /** LIGHTBOX MARKUP **/
