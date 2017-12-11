@@ -4,7 +4,7 @@ $imagesPath = "img/gallery/";
 $imagesPerRow = 3;
 ?>
 
-<div class="b-g gallery-header" style="">
+<div class="b-g gallery-header">
     <div class="block">
         <div class="b-g" style="margin: 10px 20% 0 20%;">
             <div class="block f-l w-80" style="font-size: 1.2em; font-weight: 600;">GALERIA ZDJĘĆ</div>
