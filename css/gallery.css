@@ -6,10 +6,18 @@
   text-align:center;
 }*/
 
+.gallery-header {
+  background: url('../img/article_bg.png') repeat;
+  height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 5%;
+  margi-top: 20px;
+  padding: 5px;
+}
 
 .thumbnail {
   max-width: 40%;
-  padding: 10px;
+  padding: 6px;
   box-shadow: 2px 2px 2px 2px #dcdcdc;
   margin-right: 30px;
   margin-bottom: 30px;

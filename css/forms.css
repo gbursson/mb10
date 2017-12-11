@@ -1,0 +1,45 @@
+input, textarea, select, button {
+  margin: 0;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+  -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+  box-sizing: border-box;
+}
+
+label {
+  font: 300 0.875em 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+  color: #30514b;
+}
+
+input, textarea, select {
+  font: 400 0.875em 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+  /*letter-spacing: 2px;*/
+  color: #622c3f;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  height: 2em;
+}
+
+textarea {
+  width: 92.5%;
+  height: 10em;
+  resize: none;
+}
+
+.button-submit {
+  font: 500 0.875em 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+  /*letter-spacing: 2px;*/
+  background: #3e1c28;
+  border-radius: 1px;
+  color: #ffffff;
+  padding: 12px;
+  margin: 0.4em 0 0 0;
+  min-width: 85%;
+  letter-spacing: 2px;
+  font-weight: 700;
+  height: inherit;
+
+}
+
+.margin-bottom {
+  margin: 0 0 10px 0;
+}
