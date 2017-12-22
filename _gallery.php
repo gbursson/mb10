@@ -1,7 +1,9 @@
 <?php
-$imagesCount = 9;
+$IMAGES_PER_ROW = 3;
+
 $imagesPath = "img/gallery/";
-$imagesPerRow = 3;
+$fi = new FilesystemIterator($imagesPath, FilesystemIterator::SKIP_DOTS);
+$imagesCount = iterator_count($fi);
 ?>
 
 <div class="b-g gallery-header">
@@ -19,30 +21,20 @@ $imagesPerRow = 3;
 </div>
 
 <?php
-
 echo('<div style="text-align: center; margin: 10px 20%;">');
-
 for($i=1;$i<=$imagesCount;$i++) {
-
-    $imageFull = $imagesPath . $i . ".jpg";
-    $imageThumbnail = $imagesPath . "thumb_" . $i . ".jpg";
-
+    $imageFile = $imagesPath . $i . ".jpg";
 // <!-- thumbnail image wrapped in a link -->
     echo("<a href=\"#{$i}\">");
-    echo("<img src=\"$imageThumbnail\" class=\"thumbnail\">");
-    if (($i % $imagesPerRow) == 0) {
-        echo("</a><br>");
+    echo("<img src=\"$imageFile\" class='thumbnail'>");
+    if (($i % $IMAGES_PER_ROW) == 0) {
+        echo('</a><br>');
     }
     echo("</a>");
-
 // <!-- lightbox container hidden with CSS -->
-    echo("<a href=\"#_\" class=\"lightbox\" id=\"$i\">");
-    echo("<img src=\"$imageFull\">");
-    echo("</a>");
-
+    echo("<a href='#_' class='lightbox' id=\"$i\">");
+    echo("<img src=\"$imageFile\">");
+    echo('</a>');
 }
-
-
 echo('</div>');
-
 ?>
