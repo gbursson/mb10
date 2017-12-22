@@ -1,5 +1,5 @@
 <?php
-$imagesCount = 6;
+$imagesCount = 9;
 $imagesPath = "img/gallery/";
 $imagesPerRow = 3;
 ?>
