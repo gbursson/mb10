@@ -2,25 +2,24 @@
 .f-r {float: right;}
 
 
-
 .pad-l-05 {padding-left: 5%;}
 .pad-r-05 {padding-right: 5%;}
-.pad-r-10 {padding-right: 10%;}
+/*.pad-r-10 {padding-right: 10%;}*/
 .pad-r-15 {padding-right: 15%;}
 
 /* widths */
 .w-10  {width: 10%;}
 .w-20  {width: 20%;}
 .w-25  {width: 25%;}
-.w-30  {width: 30%;}
-.w-33  {width: 33.333333%;}
+/*.w-30  {width: 30%;}
+.w-33  {width: 33.333333%;}*/
 .w-35  {width: 35%;}
 .w-40  {width: 40%;}
 .w-45  {width: 45%;}
 .w-50  {width: 50%;}
 .w-55  {width: 55%;}
-.w-60  {width: 60%;}
-.w-66  {width: 66.666666%;}
+/*.w-60  {width: 60%;}
+.w-66  {width: 66.666666%;}*/
 .w-70  {width: 70%;}
 .w-75  {width: 75%;}
 .w-80  {width: 80%;}
@@ -30,17 +29,17 @@
 
 /* font weights */
 .f-100 {font-weight: 100;}
-.f-200 {font-weight: 200;}
-.f-300 {font-weight: 300;}
+/*.f-200 {font-weight: 200;}
+.f-300 {font-weight: 300;}*/
 .f-400 {font-weight: 400;}
 .f-500 {font-weight: 500;}
 .f-600 {font-weight: 600;}
 .f-700 {font-weight: 700;}
-.f-800 {font-weight: 800;}
-.f-900 {font-weight: 900;}
+/*.f-800 {font-weight: 800;}
+.f-900 {font-weight: 900;}*/
 
 /* text alignment */
-.text-right {text-align: right;}
-.text-center {text-align: center;}
-.text-just {text-align: justify;}
-.text-left {text-align: left;}
+.text-r {text-align: right;}
+.text-c {text-align: center;}
+.text-j {text-align: justify;}
+.text-l {text-align: left;}
